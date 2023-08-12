@@ -2,6 +2,7 @@
 import express from 'express';
 import cors from 'cors';
 import env from 'dotenv';
+import post from './data.json'
 
 const app = express();
 
@@ -10,7 +11,7 @@ env.config()
 app.use(cors())
 
 app.get('/api/test',(req,res)=>{
-    res.json({message: `hello world! ${Date.now()}`});  
+    res.json({message: `Post get successful.`,posts: post.posts});  
 })
 
 
