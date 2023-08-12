@@ -1,5 +1,4 @@
-{
-  "posts": [
+export const posts = [
     {
       "id": 1,
       "title": "His mother had always taught him",
@@ -240,8 +239,4 @@
       "tags": ["american", "love", "fiction"],
       "reactions": 0
     }
-  ],
-  "total": 150,
-  "skip": 0,
-  "limit": 30
-}
+  ]
